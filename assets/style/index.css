@@ -1,78 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Bai Jamjuree", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-:root{
+:root {
+  /* Light theme color */
+  --light-theme-bg-color: #204781;
+  --light-theme-text-color: #fff;
+  --light-theme-text-carousel: #0552a0;
 
-    /* Light theme color */
-    --light-theme-bg-color: #204781;
-    --light-theme-text-color: #fff;
-    --light-theme-text-carousel: #0552A0;
-
-    /* Dark theme color */
-    --dark-theme-bg-color: #000;
-    --dark-theme-text-color: #fff;
-    --dark-theme-text-carousel: #000;
+  /* Dark theme color */
+  --dark-theme-bg-color: #000;
+  --dark-theme-text-color: #fff;
+  --dark-theme-text-carousel: #000;
 }
 
-nav{
-    background-color: var(--light-theme-bg-color);
+nav {
+  background-color: var(--light-theme-bg-color);
 }
 
-#night-toggler{
-    top: 28px;
-    right: 110px;
+#night-toggler {
+  top: 28px;
+  right: 110px;
 }
 
-#navbar-toggler-btn:focus, #navbar-toggler-btn:active{
-    outline: none;
-    box-shadow: none;
+#navbar-toggler-btn:focus,
+#navbar-toggler-btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
-.active{
-    border-bottom: 1px solid #fff;
+.active {
+  border-bottom: 1px solid #fff;
 }
 
-#carousel-text{
-    background-color: var(--light-theme-text-carousel);
+#carousel-text {
+  background-color: var(--light-theme-text-carousel);
 }
-
 
 /* Setting Specific media queries for night-toggler */
-@media (max-width: 370px) {
-    #night-toggler{
-        right: 95px;
-    }
+
+/* first part styllling */
+.a-text img {
+  width: 100%;
 }
 
-@media (max-width: 350px) {
-    #night-toggler{
-        top: 65px;
-        right: 45px;
-    }
+/*  */
+
+@media (max-width: 768px) {
+  .a-text a img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
-@media (max-width: 320px) {
-    #night-toggler{
-        top: 60px;
-        right: 45px;
-    }
+@media (min-width: 768px) {
 }
 
-@media (max-width: 317px) {
-    #night-toggler{
-        top: 70px;
-        right: 70px;
+@media (min-width: 1024px) {
+  .a-text {
+    background: url(../image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+  }
+  .a-text img {
+    display: none;
+  }
+  @media (max-width: 370px) {
+    #night-toggler {
+      right: 95px;
     }
-}
+  }
 
-@media (max-width: 220px) {
-    #night-toggler{
-        top: 90px;
-        right: 10px;
+  @media (max-width: 350px) {
+    #night-toggler {
+      top: 65px;
+      right: 45px;
     }
+  }
+
+  @media (max-width: 320px) {
+    #night-toggler {
+      top: 60px;
+      right: 45px;
+    }
+  }
+
+  @media (max-width: 317px) {
+    #night-toggler {
+      top: 70px;
+      right: 70px;
+    }
+  }
+
+  @media (max-width: 220px) {
+    #night-toggler {
+      top: 90px;
+      right: 10px;
+    }
+  }
 }
