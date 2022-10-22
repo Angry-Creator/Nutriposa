@@ -1,6 +1,4 @@
 //When the night toggler btn is clicked dark mode becomes active
-const nightToggler = document.getElementById("night-toggler");
-
 nightToggler.onclick = () =>{
     nightToggler.classList.toggle("bi-toggle-on");
     if(nightToggler.classList.contains("bi-toggle-on")){
