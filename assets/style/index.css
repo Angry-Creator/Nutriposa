@@ -26,7 +26,7 @@ nav{
 
 #night-toggler{
     top: 28px;
-    right: 120px;
+    right: 110px;
 }
 
 #navbar-toggler-btn:focus, #navbar-toggler-btn:active{
@@ -77,5 +77,16 @@ nav{
 }
 .a-text img{
     display: none;
+}
+@media (max-width: 370px) {
+    #night-toggler{
+        right: 100px;
+    }
+}
+
+@media (max-width: 280px) {
+    #night-toggler{
+        top: 70px;
+    }
 }
 }
