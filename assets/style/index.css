@@ -1,49 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Bai Jamjuree", sans-serif;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-:root{
+:root {
+  /* Light theme color */
+  --light-theme-bg-color: #204781;
+  --light-theme-text-color: #fff;
+  --light-theme-text-carousel: #0552a0;
 
-    /* Light theme color */
-    --light-theme-bg-color: #204781;
-    --light-theme-text-color: #fff;
-
-    /* Dark theme color */
-    --dark-theme-bg-color: #000;
-    --dark-theme-text-color: #fff;
-
+  /* Dark theme color */
+  --dark-theme-bg-color: #000;
+  --dark-theme-text-color: #fff;
+  --dark-theme-text-carousel: #000;
 }
 
-nav{
-    background-color: var(--light-theme-bg-color);
+nav {
+  background-color: var(--light-theme-bg-color);
 }
 
-#night-toggler{
-    top: 28px;
-    right: 110px;
+#night-toggler {
+  top: 28px;
+  right: 110px;
 }
 
-#navbar-toggler-btn:focus, #navbar-toggler-btn:active{
-    outline: none;
-    box-shadow: none;
+#navbar-toggler-btn:focus,
+#navbar-toggler-btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
-.active{
-    border-bottom: 1px solid #fff;
+.active {
+  border-bottom: 1px solid #fff;
 }
 
+#carousel-text {
+  background-color: var(--light-theme-text-carousel);
+}
 
+/* Setting Specific media queries for night-toggler */
 
 /* first part styllling */
 .a-text img {
-    width: 100%;
-
+  width: 100%;
 }
 
 .b-text{
@@ -279,9 +283,31 @@ padding: 20px 250px 0px;
    background-size: cover;
    height: 60vh;
    width: 100%;
-
 }
-.a-text img{
+}
+
+/*  */
+
+ @media (max-width: 768px) {
+  .a-text a img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .a-text {
+    background: url(../image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+  }
+  .a-text img {
     display: none;
 }
 
@@ -310,11 +336,42 @@ padding: 20px 250px 0px;
 @media (max-width: 370px) {
     #night-toggler{
         right: 100px;
-    }
+  }
+
 }
 
-@media (max-width: 280px) {
-    #night-toggler{
-        top: 70px;
+  @media (max-width: 370px) {
+    #night-toggler {
+      right: 95px;
     }
-}
+  }
+
+  @media (max-width: 350px) {
+    #night-toggler {
+      top: 65px;
+      right: 45px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    #night-toggler {
+      top: 60px;
+      right: 45px;
+    }
+  }
+
+  @media (max-width: 317px) {
+    #night-toggler {
+      top: 70px;
+      right: 70px;
+    }
+  }
+
+  @media (max-width: 220px) {
+    #night-toggler {
+      top: 90px;
+      right: 10px;
+    }
+  }
+
+
