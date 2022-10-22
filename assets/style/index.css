@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     font-family: "Bai Jamjuree", sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
@@ -34,4 +36,46 @@ nav{
 
 .active{
     border-bottom: 1px solid #fff;
+}
+
+
+
+/* first part styllling */
+.a-text img {
+    width: 100%;
+
+}
+
+
+
+/*  */
+
+@media(max-width:768px){
+.a-text a img{
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+@media(min-width:768px){
+
+
+
+} 
+     
+
+
+@media(min-width:1024px){
+.a-text {
+   background: url(../image/banner.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 60vh;
+   width: 100%;
+
+}
+.a-text img{
+    display: none;
+}
 }
