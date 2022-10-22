@@ -11,11 +11,12 @@
     /* Light theme color */
     --light-theme-bg-color: #204781;
     --light-theme-text-color: #fff;
+    --light-theme-text-carousel: #0552A0;
 
     /* Dark theme color */
     --dark-theme-bg-color: #000;
     --dark-theme-text-color: #fff;
-
+    --dark-theme-text-carousel: #000;
 }
 
 nav{
@@ -36,14 +37,42 @@ nav{
     border-bottom: 1px solid #fff;
 }
 
+#carousel-text{
+    background-color: var(--light-theme-text-carousel);
+}
+
+
+/* Setting Specific media queries for night-toggler */
 @media (max-width: 370px) {
     #night-toggler{
-        right: 100px;
+        right: 95px;
     }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 350px) {
+    #night-toggler{
+        top: 65px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    #night-toggler{
+        top: 60px;
+        right: 45px;
+    }
+}
+
+@media (max-width: 317px) {
     #night-toggler{
         top: 70px;
+        right: 70px;
+    }
+}
+
+@media (max-width: 220px) {
+    #night-toggler{
+        top: 90px;
+        right: 10px;
     }
 }
