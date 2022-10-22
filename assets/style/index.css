@@ -171,7 +171,14 @@ font-size: 30px;
     padding: 20px;
 }
 
+.f-text form{
+  box-shadow: 4px 4px 12px rgb(77, 77, 77);
+}
 
+
+.g-text img{
+  padding-left: 20px;
+}
 
 @media(max-width:768px){
 
@@ -213,16 +220,77 @@ font-size: 30px;
 }
 .e1-text{
     margin-top: 20px;
-    
+    margin-left: 10px;
+    margin-right: 10px ;
 }
 .e1-text h5{
     padding-left: 10px;
     padding-top: 10px;
 }
+
 .e1-text p{
     padding-left: 10px;
 }
 /* / */
+
+/*  */
+.f-text h3{
+  font-weight: 600;
+  padding-top: 30px;
+  }
+  .f-text img{
+    width: 100%;
+  }
+  .f-text{
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  
+  .f-text p{
+    width: 80%;
+    padding-top: 20px;
+    font-size: 17px;
+  }
+
+.f-text form{
+  max-width: 500px;
+  padding-left: 30px;
+  margin-right: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+  
+.f-text form input{
+  width: 60%;
+  padding: 10x;
+  border-radius: 50px;
+  margin-top: 10px;
+  
+  }
+  .f-text form button{
+    width: 40%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #0552a0;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  /*  */
+
+  .g-text img{
+    width: 20%;
+    margin: 0 auto;
+
+  }
+  .g-text{
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+
+  
 
 
 }
@@ -271,6 +339,63 @@ padding: 20px 250px 0px;
 }
 /* / */
 
+
+/*  */
+.f-text h3{
+font-weight: 600;
+padding-top: 10px;
+}
+.f-text img{
+  width: 100%;
+  
+}
+.f-text{
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.f-text p{
+  width: 80%;
+  padding-top: 10px;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+.f-text form input{
+width: 60%;
+padding: 10x;
+border: none;
+border: 1px solid grey;
+margin-top: 10px;
+}
+.f-text form button{
+  width: 40%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: #0552a0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.f-text form{
+  max-width: 400px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.g-text img{
+  width: 10%;
+  margin: 0 auto;
+}
+.g-text{
+  padding-left: 370px;
+}
 } 
      
 
@@ -284,6 +409,39 @@ padding: 20px 250px 0px;
    height: 60vh;
    width: 100%;
 }
+
+
+/*  */
+.f-text h3{
+  font-weight: 600;
+  padding-top: 10px;
+  }
+  .f-text img{
+    width: 100%;
+  }
+  .f-text{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .f-text p{
+    width: 80%;
+    padding-top: 10px;
+    font-size: 17px;
+  }
+  
+  /* / */
+
+  .g-text img{
+    width: 10%;
+    margin: 0 auto;
+  }
+  .g-text{
+    padding-left: 470px;
+  }
 }
 
 /*  */
