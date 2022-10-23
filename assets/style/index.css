@@ -23,6 +23,8 @@
 nav {
   background-color: var(--light-theme-bg-color);
   top: 0;
+  z-index: 10;
+  box-shadow: 4px 4px 10px rgb(66, 66, 66);
 }
 
 #night-toggler {

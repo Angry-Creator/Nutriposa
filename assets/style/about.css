@@ -1,6 +1,4 @@
-.i-text{
-    display: flex;
-}
+
 
 .contact-img{
     max-width: 100%;
@@ -12,20 +10,18 @@
 
 @media(max-width:768px){
 .h-text{
-padding-left: 40px;
+padding-left: 20px;
 padding-top: 30px;
 padding-right: 20px;
     
 }
 
 .i-text img{
-    width: 25%;
-    padding-left: 10px;
+    width: 100%;
+    padding: 10px;
 }
 .i-text{
-  overflow-x: hidden;
-  padding-right: 10px;
-  /* padding-left: 20px; */
+
 }
 }
 
@@ -41,8 +37,8 @@ padding-right: 20px;
     padding-bottom: 20px;
 }
 .i-text img{
-    width: 25%;
-    padding-left: 10px;
+    width: 100%;
+    padding: 10px;
 }
 .i-text{
     padding-right: 10px;
