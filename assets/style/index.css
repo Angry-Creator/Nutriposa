@@ -10,18 +10,16 @@
 
 :root {
   /* Light theme color */
-  --light-theme-bg-color: #204781;
-  --light-theme-text-color: #fff;
-  --light-theme-text-carousel: #0552a0;
+  --light-header-color: #204781;
+  --light-color: #fff;
+  --light-text-carousel-color: #0552a0;
 
   /* Dark theme color */
-  --dark-theme-bg-color: #000;
-  --dark-theme-text-color: #fff;
-  --dark-theme-text-carousel: #000;
+  --dark-color: #000;
 }
 
 nav {
-  background-color: var(--light-theme-bg-color);
+  background-color: var(--light-header-color);
   top: 0;
   z-index: 10;
   box-shadow: 4px 4px 10px rgb(66, 66, 66);
@@ -42,8 +40,22 @@ nav {
   border-bottom: 1px solid #fff;
 }
 
+body{
+  transition: all 0.5s ease-in-out;
+}
+
 #carousel-text {
-  background-color: var(--light-theme-text-carousel);
+  background-color: var(--light-text-carousel-color);
+  color: var(--light-color);
+}
+
+.service-contact{
+  color: white;
+}
+
+#signUpBtn, #loginBtn{
+  background-color: var(--light-text-carousel-color);
+  color: var(--light-color);
 }
 
 /* Setting Specific media queries for night-toggler */
@@ -59,18 +71,26 @@ nav {
 }
 
 .b-text button {
-  width: 155px;
-  height: 40px;
-  background-color: #204781;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  color: #fff;
-
-  margin-bottom: 20px;
+  background-color: var(--light-header-color);
 }
 
-/*  */
+/* Applying Default Theme */
+
+.btn-theme-control{
+  background-color: var(--light-header-color);
+  color: var(--light-color);
+}
+
+/* On dark Mode */
+.changeWhiteToBlack{
+  color: var(--light-color);
+}
+
+
+/* On light Mode */
+.changeBlackToWhite{
+  color: var(--dark-color);
+}
 
 /* trending stylling */
 
@@ -137,13 +157,7 @@ nav {
 }
 
 .c-text button {
-  width: 135px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  background-color: #204781;
-  color: #fff;
-  border-radius: 50px;
+  background-color: var(--light-header-color);
 }
 
 .d-text {
@@ -178,7 +192,7 @@ nav {
   object-fit: contain;
 }
 .service-contact{
-  background-color: var(--light-theme-text-carousel);
+  background-color: var(--light-text-carousel-color);
   margin-top: 30px;
 }
 
@@ -316,14 +330,7 @@ nav {
   /*  /*/
 
   /*  */
-  .e-text {
-    margin-left: 40px;
-  }
-  .e1-text {
-    max-width: 350px;
-    margin-left: 30px;
-    margin-top: 30px;
-  }
+
   .e1-text img {
     width: 100%;
   }
