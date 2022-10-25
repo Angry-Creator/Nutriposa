@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Linked Stylesheets-->
     <link
+      rel="shortcut icon"
+      href="https://www.nutrishopusa.com/sites/all/themes/nutrblue/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
@@ -16,6 +21,7 @@
       href="../assets/bootstrap-5.2.0-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../assets/style/index.css" />
+    <link rel="stylesheet" href="../assets/style/supplements.css" />
 
     <title>NUTRIPOSA - Supplements</title>
   </head>
@@ -61,6 +67,575 @@
       </div>
     </nav>
 
+    <article class="container mt-5">
+      <div class="row">
+        <!--Product list drop down-->
+        <div class="col-lg-3">
+          <div class="mt-2 mt-lg-0">
+            <div class="dropdown text-start border">
+              <buton
+                class="postion-relative btn dropdown-toggle w-100 text-end changeBlackToWhite"
+                data-bs-toggle="dropdown"
+              >
+                <span class="position-absolute start-0 ps-2">
+                  Select a Product</span
+                >
+              </buton>
+              <ul class="dropdown-menu w-100 px-2">
+                <li><input class="dropdown-item border" type="text" /></li>
+                <li><a class="dropdown-item" href="#">TURMERIC</a></li>
+                <li><a class="dropdown-item" href="#">VITAMIN C</a></li>
+                <li><a class="dropdown-item" href="#">VITAMIN D3</a></li>
+                <li><a class="dropdown-item" href="#">ZINC</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Filter by Brand drop down-->
+        <div class="col-lg-3">
+          <div class="mt-2 mt-lg-0">
+            <div class="dropdown text-start border">
+              <buton
+                class="postion-relative btn dropdown-toggle w-100 text-end changeBlackToWhite"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <span class="position-absolute start-0 ps-2">
+                  Filter by Brand</span
+                >
+              </buton>
+              <ul class="dropdown-menu w-100 px-2">
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="vitasportItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label
+                      for="vitasportItems"
+                      class="dropdown-item-label w-100"
+                      >&nbspVitasport</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="supplementStacksItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label
+                      for="supplementStacksItems"
+                      class="dropdown-item-label w-100"
+                      >&nbspSupplement Stacks</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="pHLabsItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label for="pHLabsItems" class="dropdown-item-label w-100"
+                      >&nbsppH Labs</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="NyctoNutraItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label
+                      for="NyctoNutraItems"
+                      class="dropdown-item-label w-100"
+                      >&nbspEVOchem Nutrition</label
+                    >
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Filter by Category drop down-->
+        <div class="col-lg-3">
+          <div class="mt-2 mt-lg-0">
+            <div class="dropdown text-start border">
+              <buton
+                class="postion-relative btn dropdown-toggle w-100 text-end"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <span class="position-absolute start-0 ps-2 changeBlackToWhite">
+                  Filter by Category</span
+                >
+              </buton>
+              <ul class="dropdown-menu w-100 px-2">
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="popularStacksItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label
+                      for="popularStacksItems"
+                      class="dropdown-item-label w-100"
+                      >&nbspPopular Stacks</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="newReleasesItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label
+                      for="newReleasesItems"
+                      class="dropdown-item-label w-100"
+                      >&nbspNew Releases</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="sleepItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label for="sleepItems" class="dropdown-item-label w-100"
+                      >&nbspSleep</label
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span class="dropdown-item d-inline-flex align-items-center">
+                    <input
+                      id="proteinItems"
+                      type="checkbox"
+                      class="inputCheckBox"
+                    />
+                    <label for="proteinItems" class="dropdown-item-label w-100"
+                      >&nbspProtein</label
+                    >
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--Button Div-->
+        <div class="col-lg-3">
+          <div class="d-flex px-2 py-3 py-lg-0">
+            <button id="apply" class="btn btn-theme-control w-100 me-1 me-lg-1">
+              Apply
+            </button>
+            <button id="clear-filter" class="btn btn-theme-control w-100">
+              Clear Filter
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <p class="container py-5">
+      <span id="popular" class="fs-2 fw-bold d-block py-2">Popular Stacks</span>
+      Stacking supplements is common practice in the health and fitness
+      community. It involves strategically combining products in order to create
+      a synergistic bond between the respective supplements being stacked. The
+      objective is greater effectiveness and overall results in a shorter period
+      of time. We’ve compiled the most popular and efficacious supplement stacks
+      to simplify your shopping experience. Whether you’re looking to build lean
+      muscle, boost your metabolism, increase endurance, enhance recovery or
+      simply focus on overall health, we’ve got a stack for that..
+    </p>
+
+    <!--Popular-->
+    <article class="container d-lg-flex px-lg-0">
+      <div class="row gx-2 gx-lg-2 gy-2 gy-lg-0">
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/11-jumpstart-stack.png?itok=Ck4-r_IH&timestamp=1646760117"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Jumpstart Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/03-cardio-burn-stack_0.png?itok=g_Xhg14F&timestamp=1644885239"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Cardio Burn Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/04-stimulant-free-metabolic-stack.png?itok=yiutZGdi&timestamp=1646358884"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Stimulant-Free Metabolic Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/23-muscle-up-stack_1.png?itok=kzUibtaG&timestamp=1649979029"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Muscle Up Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--New Release-->
+    <article class="container d-lg-flex flex-lg-column px-lg-0 mt-5">
+      <span id="newReleases" class="fs-2 fw-bold d-block py-2 mb-2">
+        New Releases
+      </span>
+      <div class="row gx-2 gx-lg-2 gy-2 gy-lg-0">
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/phl-sterone66.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">pH Labs</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >STERONE-66™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/phl_phosphator_variation.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">pH Labs</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >PHOSPHATOR™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/04-stimulant-free-metabolic-stack.png?itok=yiutZGdi&timestamp=1646358884"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Stimulant-Free Metabolic Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/23-muscle-up-stack_1.png?itok=kzUibtaG&timestamp=1649979029"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stack</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Muscle Up Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--Sleep-->
+    <article class="container d-lg-flex flex-lg-column px-lg-0 mt-5">
+      <span id="sleep" class="fs-2 fw-bold d-block py-2 mb-2"> Sleep </span>
+      <div class="row gx-2 gx-lg-2 gy-2 gy-lg-0">
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/ss_dusk_strawberryorange.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category"
+              >Stance Supplements</span
+            >
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >DUSK GH™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/kn_somnilean_variation.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category"
+              >Katalyst Nutraceuticals</span
+            >
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >SOMNILEAN™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/evo_thermovexpm_tropicalshavedice.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">EVOchem Nutrition</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >THERMOVEX PM™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/fo_1xpm.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span
+              class="fs-5 fw-bold produce-category overflow-auto text-nowrap"
+              >FORZAONE P. Nutrition</span
+            >
+            <!--FORZAONE Performance Nutrition-->
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Muscle Up Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--Protein-->
+    <article class="container d-lg-flex flex-lg-column px-lg-0 mt-5">
+      <span id="protein" class="fs-2 fw-bold d-block py-2 mb-2"> Protein </span>
+      <div class="row gx-2 gx-lg-2 gy-2 gy-lg-0">
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/styles/1x/public/product/24-complete-protein-stack.png?itok=9wGmrJjp&timestamp=1649801248"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Supplement Stacks</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >Complete Protein Stack</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/vs_pro7ein_chocolate_3lb.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Vitasport</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >PRO7EIN SYNTHESIS™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/vp7_gourmetchocolate_3lb.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category">Vitasport</span>
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >PRO7EIN SYNTHESIS GOURMET™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 col-lg-3 overflow-hidden border px-0 py-3 px-sm-2 px-lg-3"
+        >
+          <img
+            src="https://www.nutrishopusa.com/sites/default/files/product/FO_Forzapro_Chocolate_0.png"
+            loading="lazy"
+            class="product-img"
+          />
+          <div
+            class="d-flex flex-column justify-content-center align-items-center text-center"
+          >
+            <span class="fs-5 fw-bold produce-category"
+              >FORZAONE P. Nutrition</span
+            >
+            <!--FORZAONE Performance Nutrition-->
+            <span
+              class="fw-bold mt-2 mb-2 product-name overflow-auto text-nowrap"
+              >FORZA PRO™</span
+            >
+            <button class="btn px-5 py-2 btn-theme-control">Like</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!--Icons article-->
+    <hr />
+    <article
+      class="container-fluid fs-1 d-flex justify-content-around py-2 my-2"
+    >
+      <div class="row gy-3 overflow-hidden">
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-pin-map"></span>
+          <span class="fs-6">Find a Nutrishop</span>
+        </div>
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-bag"></span>
+          <span class="fs-6">Shop Now</span>
+        </div>
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-shop"></span>
+          <span class="fs-6">Open a Nutrishop</span>
+        </div>
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-instagram"></span>
+          <span class="fs-6">Instagram</span>
+        </div>
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-facebook"></span>
+          <span class="fs-6">Facebook</span>
+        </div>
+        <div class="col-4 d-flex flex-column text-center">
+          <span class="bi-chat-square-text"></span>
+          <span class="fs-6">Store Experience</span>
+        </div>
+      </div>
+    </article>
+
     <!--Stay connected article-->
     <article class="container-fluid service-contact py-5">
       <div class="container d-lg-flex text-center">
@@ -78,6 +653,58 @@
         Terms and Privacy Policy.
       </div>
     </article>
+
+    <!--Last Article-->
+    <article
+      class="container d-lg-flex px-lg-0 py-5 justify-content-lg-between"
+    >
+      <div class="d-flex flex-column">
+        <span class="fs-3 fw-bold mb-2">NUTRIPOSA</span>
+        <span class="my-2">Find a Nutrishop</span>
+        <span class="my-2">Open a Nutrishop</span>
+        <span class="my-2">About Us</span>
+      </div>
+      <div class="d-flex flex-column">
+        <span class="mt-5">Find a Nutrishop</span>
+        <span class="my-2">Open a Nutrishop</span>
+        <span class="my-2">About Us</span>
+        <span class="my-2">About Us</span>
+      </div>
+      <div class="d-flex flex-column">
+        <span class="mt-5">Find a Nutrishop</span>
+        <span class="my-2">Open a Nutrishop</span>
+        <span class="my-2">About Us</span>
+      </div>
+      <div class="d-flex flex-column">
+        <form class="border contact-form p-3 mt-5 mt-lg-0">
+          <label for="username" class="ps-1">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="form-control"
+          />
+          <label for="password" class="ps-1 mt-3">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+          />
+          <button
+            id="loginBtn"
+            class="btn w-100 my-3 px-4 py-2 btn-theme-control"
+          >
+            Login
+          </button>
+          <div class="text-center">
+            <span class="d-block">Create New Account</span>
+            <span class="d-block">Request New Password</span>
+          </div>
+        </form>
+      </div>
+    </article>
+
     <!--Scripts-->
     <script src="../assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/index.js"></script>
