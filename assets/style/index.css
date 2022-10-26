@@ -26,8 +26,8 @@ nav {
 }
 
 #night-toggler {
-  top: 28px;
-  right: 110px;
+  top: 22px;
+  right: 90px;
 }
 
 #navbar-toggler-btn:focus,
@@ -194,6 +194,13 @@ body{
 .service-contact{
   background-color: var(--light-text-carousel-color);
   margin-top: 30px;
+}
+
+@media (min-width: 991px) {
+  #night-toggler{
+    top: 18px;
+    right: 50px;
+  }
 }
 
 
@@ -478,17 +485,6 @@ body{
     max-width: 450px;
   }
 }
-@media (max-width: 370px) {
-  #night-toggler {
-    right: 100px;
-  }
-}
-
-@media (max-width: 370px) {
-  #night-toggler {
-    right: 95px;
-  }
-}
 
 @media (max-width: 370px) {
   #night-toggler {
@@ -498,28 +494,26 @@ body{
 
 @media (max-width: 350px) {
   #night-toggler {
-    top: 65px;
-    right: 45px;
+    right: 80px;
   }
 }
 
 @media (max-width: 320px) {
   #night-toggler {
-    top: 60px;
-    right: 45px;
+    top: 22px;
+    right: 80px;
   }
 }
 
 @media (max-width: 317px) {
   #night-toggler {
-    top: 70px;
+    top: 18px;
     right: 70px;
   }
 }
 
-@media (max-width: 220px) {
+@media (max-width: 300px) {
   #night-toggler {
-    top: 90px;
-    right: 10px;
+    display: none;
   }
 }
