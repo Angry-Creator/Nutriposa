@@ -32,7 +32,7 @@ nightToggler.onclick = () => {
         nav.style.backgroundColor = "var(--light-header-color)";
         document.body.style.backgroundColor = "var(--light-color)";
         serviceContact.style.backgroundColor = "var(--light-text-carousel-color)";
-        serviceContact.style.color = "var(--dark-color)";
+        serviceContact.style.color = "var(--light-color)";
 
         changeWhiteToBlack.forEach((element) => {
             element.classList.toggle("changeWhiteToBlack");
@@ -41,7 +41,7 @@ nightToggler.onclick = () => {
 
         btnThemeControl.forEach((element)=>{
             element.style.backgroundColor = "var(--light-header-color)";
-            element.style.backgroundColor = "var(--light-color)";
+            element.style.color = "var(--light-color)";
         });
 
         saveState("light");
