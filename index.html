@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Linked Stylesheets-->
-    <link rel="shortcut icon" href="https://www.nutrishopusa.com/sites/all/themes/nutrblue/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link
+      rel="shortcut icon"
+      href="https://www.nutrishopusa.com/sites/all/themes/nutrblue/favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -103,8 +107,10 @@
 
       <!-- Trending section -->
 
-      <div class="carousel">
+      <div class="container carousel">
         <h4>Trending</h4>
+        <i class="bi bi-arrow-right-square fs-1 customNextBtn"></i>
+        <i class="bi bi-arrow-left-square fs-1 customPrevBtn"></i>
         <div class="bb-text owl-carousel">
           <div class="cards">
             <a href="" style="text-decoration: none; color: black">
@@ -155,7 +161,7 @@
 
       <!-- the slider section -->
 
-      <section class="py-4">
+      <section class="container py-4">
         <div
           id="carousel-text"
           class="container-fluid carousel slide"
@@ -249,7 +255,7 @@
 
       <!--  -->
       <div class="container e-text">
-        <div class="row gy-3 d-flex justify-content-center">
+        <div class="row overflow-hidden gy-3 d-flex justify-content-center">
           <div class="col-12 col-lg-6 d-flex justify-content-center">
             <div class="e1-text">
               <a href="" style="text-decoration: none; color: black">
@@ -447,6 +453,7 @@
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
+
         responsive: {
           0: {
             items: 1,
@@ -458,6 +465,18 @@
             items: 3,
           },
         },
+      });
+      var owl = $(".bb-text");
+      owl.owlCarousel();
+      // Go to the next item
+      $(".customNextBtn").click(function () {
+        owl.trigger("next.owl.carousel");
+      });
+      // Go to the previous item
+      $(".customPrevBtn").click(function () {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger("prev.owl.carousel", [300]);
       });
     </script>
   </body>
